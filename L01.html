@@ -1,52 +1,303 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Vega</title>
-    <meta charset="utf-8">
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-    </style>
-  </head>
-  <body>
-    <textarea id="source">
+<head>
+  <title>Vega</title>
+  <meta charset="utf-8">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+    @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+    body {
+      font-family: 'Droid Serif';
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Yanone Kaffeesatz';
+      font-weight: normal;
+    }
+
+    .remark-code,
+    .remark-inline-code {
+      font-family: 'Ubuntu Mono';
+    }
+  </style>
+</head>
+
+<body>
+  <textarea id="source">
 
 class: center, middle
 
 # Lecture 01
-## An introduction to programming
-
----
-
-# Agenda
-
-1. Introduction
-2. Deep-dive
-3. ...
+## Computer systems & programming
 
 ---
 
 # Introduction
 
+A **computer system** is a combination of all the components required to process and store data using a computer.
+
+Every computer system is composed of multiple pieces of hardware and software.
+
 ---
 
+# Hardware
+
+## Physical devices associated with the computer.
+
+- Keyboards, mice, speakers
+- Embedded systems
+- Mainframes
+
+Computer hardware needs instructions that control how and when data items are input,
+how they are processed, and the form in which they are output or stored.
+
+---
+
+# Software
+
+## Instructions which tell the computer what to do. 
+
+**Programs:** Instruction sets written by programmers 
+
+When you write software instructions, you are **programming.**
+
+---
+
+# The 2 kinds of software
+
+## Application software
+
+Also shorthandedly known as an **app** and is all the programs you apply to a task,
+such as word- processing programs, spreadsheets, payroll and inventory programs, and games.
+
+---
+
+# The 2 kinds of software
+
+## System software
+
+Comprises the programs that you use to manage your computer, including operating systems.
+- **Operating systems** - Windows, Linux, OSX, iOS, Android
+- **Device Drivers** - Controls particular hardware which is attached to the system.
+- **Firmware** - Permanent software that is embedded into a read-only memory (eg: BIOS)
+- **Programming Language Translators** - Mediator programs on which software programs rely to translate high-level language code to simpler machine-level code.
+- **Utility** - Aid in analyzing, optimizing, configuring and maintaining a computer system
+
+---
+
+# The 2 kinds of software
+
+These are fairly useless definitions.
+
+---
+
+# The 3 major operations of computer systems
+
+#### Input
+Data items enter the computer system and are placed in memory.
+
+#### Processing
+Handling the data in order to make it meaningful.
+
+#### Output
+Display or use the meaningful, processed information.
+- Could also just be stored for potential later use.
+
+---
+
+# Programming languages
+
+Computer instructions are written in a computer **programming language**.
+- Java
+- Python
+- C++
+- Erlang
+- Haskell
+
+Some programmers work exclusively in one language, whereas others know several and use the one that is best suited to the task at hand.
+
+---
+
+# Code
+
+Instructions written in a programming language are called **program code** or just **code**.
+
+## Syntax
+
+Each language has a unique syntax governing work use and punctuation.
+
+Mistakes are called **syntax errors**
+
+## Computers are dumb...real dumb
+
+---
+
+# Levels of programming languages
+
+Low-level programming is close to machine code, high-level programming is closer to natural languages.
+
+## Low level
+```
+LUI  R1, #1
+
+LUI  R2, #2
+
+DADD R3, R1, R2
+```
+## High level
+```
+x = 1 + 2;
+```
+
+---
+
+# Some syntax/level examples
+
+### In C:
+```
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!\n");
+  return 0;
+}
+```
+
+### In BASIC:
+```
+10 PRINT "Hello world!"
+20 END
+```
+
+---
+
+# Some syntax/level examples
+
+### In Java:
+```
+public class HelloWorld
+{
+  public static void main(string[] args)
+  {
+    System.out.println("Hello world!");
+  }
+} 
+```
+
+### In Pascal:
+```
+program HelloWorld;
+
+begin
+  writeln('Hello World');
+end.
+```
+
+---
+
+# Some syntax/level examples
+
+### In Perl:
+```
+#!/usr/bin/perl
+print "Hello World!\n";
+```
+### In Python:
+```
+print("Hello World!")
+```
+
+---
+
+# How does the magic happen? 
+
+## Code is stored in memory
+- Random access memory, or RAM, is a form of internal, volatile memory.
+- Internal storage is **volatile**—its contents are lost when the computer is turned off or loses power.
+- Permanent storage devices are **nonvolatile**—that is, their contents are persistent and are retained even when power is lost.
+
+---
+
+# How does the magic happen? 
+
+## Code is translated to machine language
+**Machine language** represents the millions of on/off circuits within the computer.
+Programming language statements are called **source code**, and the translated machine language statements are **object code**.
+
+Each programming language uses a piece of software, called a compiler or an interpreter,
+to translate your source code into **machine language** or **binary**.
+
+Represented in 1s and 0s.
+
+---
+
+# How does the magic happen?
+
+## The computer can then carry out the program instructions
+
+When instructions are carried out, a program **runs**, or **executes**.
+
+---
+
+# How does the magic happen?
+
+![Diagram](https://upload.wikimedia.org/wikipedia/commons/2/2d/Programming_language.png)
+
+---
+
+# Compiler vs Interpreter
+
+A **compiled program** has to be modified into machine code before it is used.
+- As an analogy, think of a novel that was written in one language and then translated into another.
+
+An **interpreted program** is stored in a human-readable form.
+- This is analogous to the role that a human interpreter performs. 
+
+### As a generalization, compiled programs are faster to run but slower to develop.
+
+---
+
+# Basic goals of computer programming
+### When you are planning to create a computer program you should:
+
+- Ensure your program fulfills the need it is addressing.
+- Ensure that people can easily use your program.
+- Ensure that it is easy to understand, fix, and improve your program without a major time investment.
+- Enhance problem solving using logic.
+- Developing a high understanding of principles in programming.
+- Demonstrating basic concepts, and software applications.
+- Recognizing ethical working codes.
+
+---
+
+# Common problems
+### These are very common mistakes programmers make:
+
+- Your program does not do a job any better than an available alternative program. At best, you're re-inventing the wheel.
+- Your program does not work as intended.
+- Your program is too complicated or too primitive to be useful to most people.
+- Other people, or yourself at a later time, can't understand the programming behind your program. This means your project won't grow.
+
+---
 # Slides and notes
 
-Slides and notes can be found at https://hermanmartinus.github.io/lecture-notes/index
+### Slides and notes can be found at:
+
+https://tinyurl.com/vega-notes
+
+---
 
     </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
-    <script>
-      var slideshow = remark.create();
-    </script>
-  </body>
+  <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+  </script>
+  <script>
+    var slideshow = remark.create();
+  </script>
+</body>
+
 </html>
