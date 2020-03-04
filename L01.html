@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Vega</title>
+  <title>Lecture 01</title>
   <meta charset="utf-8">
   <style>
     @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -329,6 +329,35 @@ https://en.wikiversity.org/wiki/Introduction_to_Programming/About_Programming
   </script>
   <script>
     var slideshow = remark.create();
+    const body = document.querySelector('body');
+
+    body.addEventListener('dblclick', function (e) {
+        openFullscreen(body);
+    });
+
+    function openFullscreen(elem) {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
+      }
+    }
+
+    function closeFullscreen(elem) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) { /* Firefox */
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { /* IE/Edge */
+        document.msExitFullscreen();
+      }
+    }
   </script>
 </body>
 
