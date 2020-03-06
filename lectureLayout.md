@@ -3,8 +3,8 @@ accomplishing a programming
 solution;
 https://en.wikiversity.org/wiki/Introduction_to_Programming/About_Programming
 
-LO2: Understand and explain simple
-program logic;
+LO2: Understand and explain simple program logic;
+https://www.codesdope.com/course/c-sharp-introduction/
 https://en.wikiversity.org/wiki/Programming_Logic
 
 LO3: Explain the program development
