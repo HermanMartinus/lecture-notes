@@ -2,210 +2,208 @@
 <html>
 
 <head>
-  <title>Lecture 03</title>
-  <meta charset="utf-8">
-  <style>
-    @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-    @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+    <title>Lecture 03</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-    body {
-      font-family: 'Droid Serif';
-    }
+        body {
+            font-family: 'Droid Serif';
+            word-wrap: break-word;
+        }
 
-    h1,
-    h2,
-    h3 {
-      font-family: 'Yanone Kaffeesatz';
-      font-weight: normal;
-    }
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: normal;
+        }
 
-    .remark-code,
-    .remark-inline-code {
-      font-family: 'Ubuntu Mono';
-    }
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Ubuntu Mono';
+        }
 
-    img {
-      max-width: 100%;
-      min-width: 50%;
-      max-height: 60vh;
-    }
-  </style>
+        img {
+            max-width: 100%;
+            min-width: 50%;
+            max-height: 60vh;
+        }
+    </style>
 </head>
 
 <body>
-  <textarea id="source">
-
-class: center, middle
-
-# Lecture 03
-## Program lifecycle
-
----
-
-# Introduction
-
-A programmer doesn't just sit down and start writing code.
-
-There's more to it than that.
-
----
-<div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/AIOu57hT8mi4g" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-
----
-
-# Program development lifecycle
-
-## Can be broken down into 7 steps
-
-![Imgur](https://imgur.com/ftSfhAH.png)
-
----
-
-# Understanding the Problem
-
-Programmers write programs to satisfy the needs of others, called **users** or **end users**.
-
-Programmers are providing a service to these users, programmers must first understand what the users want.
-
-When a program runs, you usually think of the logic as a cycle of **input-processing-output** operations,
-
-but when you plan a program, you think of the **output first**. 
-
----
-
-# Real world example
-
-![Managers](https://i.redd.it/7bgjlsza22b41.png)
-
-HeadSmart
-
----
-
-# The importance of a spec document
-
-Documentation consists of all the supporting paperwork for a program; it might include items such as original requests for the program from users, sample output, and descriptions of the data items available for input.
-
-Depending on the project, spec documents will vary. 
-
----
-
-# Planning the Logic
-
-The heart of the programming process lies in planning the program’s logic. During this phase of the process, the programmer plans the steps of the program, deciding what steps to include and how to order them. You can plan the solution to a problem in many ways.
-
-The two most common planning tools are **flowcharts** and **pseudocode**.
-
-You may hear programmers refer to planning a program as **“developing an algorithm.”** An algorithm is the sequence of steps or rules you follow to solve a problem.
-
----
-
-# Coding the Program
-
-Some experienced programmers can successfully combine logic planning and program coding in one step.
-
-This may work for planning and writing a very simple program, just as you can plan and write a postcard to a friend using one step.
-
-A good term paper or a Hollywood screenplay, however, needs planning before writing—and so do most programs.
-
----
-
-# Translate the Program into Machine Language
-
-Interpreted vs Compiled languages
-
-Source code vs Object code
-
-When writing a program, a programmer **will** need to recompile the code several times.
-
----
-
-# Translate the Program into Machine Language
-
-![img](https://imgur.com/hDW2S0L.jpg)
-
----
-
-# Testing the Program
-
-A program that is free of syntax errors is not necessarily free of logical errors.
-
-Once a program is free of syntax errors, the programmer can test it—that is, execute it with some sample data to see whether the results are logically correct.
-
-The process of finding and correcting program errors is called **debugging**. You debug a program by testing it using many sets of data.
-
----
-
-# Putting the Program into Production
-
-Once the program is thoroughly tested and debugged, it is ready for the organization to use.
-
-Production deploys differ depending on the type of program. 
-
----
-
-# Maintaining the Program
-
-Maintenance can be required for many reasons. All programs need maintenance.
-
-It's why the world is moving to subscription based services. 
-
----
-
-# Let's write a simple game
-
-Download:
-https://tinyurl.com/lecture03-assets
-
----
-
-# Slides and notes
-
-### Slides and notes can be found at:
-
-https://tinyurl.com/vega-notes
-
-### Additional resources
-https://tinyurl.com/lecture03-assets
-https://en.wikibooks.org/wiki/Introduction_to_Computer_Information_Systems/Program_Development#Program_Development_Life_Cycle_-_Analysis,_Design,_Coding
-
----
-
+    <textarea id="source">
+        class: center, middle
+
+        # Lecture 03
+        ## Program lifecycle
+        
+        ---
+        
+        # Introduction
+        
+        A programmer doesn't just sit down and start writing code.
+        
+        There's more to it than that.
+        
+        ---
+        <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/AIOu57hT8mi4g" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+        
+        ---
+        
+        # Program development lifecycle
+        
+        ## Can be broken down into 7 steps
+        
+        ![Imgur](https://imgur.com/ftSfhAH.png)
+        
+        ---
+        
+        # Understanding the Problem
+        
+        Programmers write programs to satisfy the needs of others, called **users** or **end users**.
+        
+        Programmers are providing a service to these users, programmers must first understand what the users want.
+        
+        When a program runs, you usually think of the logic as a cycle of **input-processing-output** operations,
+        
+        but when you plan a program, you think of the **output first**. 
+        
+        ---
+        
+        # Real world example
+        
+        ![Managers](https://i.redd.it/7bgjlsza22b41.png)
+        
+        HeadSmart
+        
+        ---
+        
+        # The importance of a spec document
+        
+        Documentation consists of all the supporting paperwork for a program; it might include items such as original requests for the program from users, sample output, and descriptions of the data items available for input.
+        
+        Depending on the project, spec documents will vary. 
+        
+        ---
+        
+        # Planning the Logic
+        
+        The heart of the programming process lies in planning the program’s logic. During this phase of the process, the programmer plans the steps of the program, deciding what steps to include and how to order them. You can plan the solution to a problem in many ways.
+        
+        The two most common planning tools are **flowcharts** and **pseudocode**.
+        
+        You may hear programmers refer to planning a program as **“developing an algorithm.”** An algorithm is the sequence of steps or rules you follow to solve a problem.
+        
+        ---
+        
+        # Coding the Program
+        
+        Some experienced programmers can successfully combine logic planning and program coding in one step.
+        
+        This may work for planning and writing a very simple program, just as you can plan and write a postcard to a friend using one step.
+        
+        A good term paper or a Hollywood screenplay, however, needs planning before writing—and so do most programs.
+        
+        ---
+        
+        # Translate the Program into Machine Language
+        
+        Interpreted vs Compiled languages
+        
+        Source code vs Object code
+        
+        When writing a program, a programmer **will** need to recompile the code several times.
+        
+        ---
+        
+        # Translate the Program into Machine Language
+        
+        ![img](https://imgur.com/hDW2S0L.jpg)
+        
+        ---
+        
+        # Testing the Program
+        
+        A program that is free of syntax errors is not necessarily free of logical errors.
+        
+        Once a program is free of syntax errors, the programmer can test it—that is, execute it with some sample data to see whether the results are logically correct.
+        
+        The process of finding and correcting program errors is called **debugging**. You debug a program by testing it using many sets of data.
+        
+        ---
+        
+        # Putting the Program into Production
+        
+        Once the program is thoroughly tested and debugged, it is ready for the organization to use.
+        
+        Production deploys differ depending on the type of program. 
+        
+        ---
+        
+        # Maintaining the Program
+        
+        Maintenance can be required for many reasons. All programs need maintenance.
+        
+        It's why the world is moving to subscription based services. 
+        
+        ---
+        
+        # Let's write a simple game
+        
+        Download:
+        https://tinyurl.com/lecture03-assets
+        
+        ---
+        
+        # Slides and notes
+        
+        ### Slides and notes can be found at:
+        
+        https://tinyurl.com/vega-notes
+        
+        ### Additional resources
+        https://tinyurl.com/lecture03-assets
+        
+        https://en.wikibooks.org/wiki/Introduction_to_Computer_Information_Systems/Program_Development#Program_Development_Life_Cycle_-_Analysis,_Design,_Coding        
     </textarea>
-  <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-  </script>
-  <script>
-    var slideshow = remark.create();
-    const body = document.querySelector('body');
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        var slideshow = remark.create();
+        const body = document.querySelector('body');
 
-    body.addEventListener('dblclick', function (e) {
-        openFullscreen(body);
-    });
+        body.addEventListener('dblclick', function (e) {
+            openFullscreen(body);
+        });
 
-    function openFullscreen(elem) {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.mozRequestFullScreen) { /* Firefox */
-        elem.mozRequestFullScreen();
-      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE/Edge */
-        elem.msRequestFullscreen();
-      }
-    }
+        function openFullscreen(elem) {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
 
-    function closeFullscreen(elem) {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) { /* Firefox */
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) { /* IE/Edge */
-        document.msExitFullscreen();
-      }
-    }
-  </script>
+        function closeFullscreen(elem) {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+            }
+        }
+    </script>
 </body>
 
 </html>
