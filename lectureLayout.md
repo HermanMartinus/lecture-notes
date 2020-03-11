@@ -1,3 +1,9 @@
+---
+Title: Thing
+type: notes
+---
+https://blogs.unity3d.com/2019/08/14/create-with-code-learn-teach-computer-programming-by-making-games/
+
 LO1: Explain how the components of computer systems interact in
 accomplishing a programming
 solution;
