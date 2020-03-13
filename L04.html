@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lecture 03</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Droid Serif';
+            word-wrap: break-word;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: normal;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Ubuntu Mono';
+        }
+
+        img {
+            max-width: 100%;
+            min-width: 50%;
+            max-height: 60vh;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+        class: center, middle
+
+        # Lecture 04
+        ## Using Pseudocode Statements and Flowchart Symbols
+        
+        ---
+        
+        # Introduction
+        
+        When a programmer plans the logic for a solution, they often use one of two tools: **pseudocode** (pronounced sue-doe-code) or **flowcharts**.
+        
+        ---
+        
+        # Pseudocode
+        
+        An English-like representation of the logical steps it takes to solve a problem.
+        
+        *Pseudo* means *false*, and *code* means....well....*code*
+        
+        ---
+        
+        # Flowchart
+        
+        A pictorial representation of the (potential) program logic. 
+        
+        ![Flowchart](https://www.edrawsoft.com/flowchart/images/flowchart-simple-sample.png)
+        ---
+        
+        # Writing Pseudocode
+
+        Using pseudocode involves writing down all the steps you will use in a program.
+
+        Prefancing pseudocode can be done with statements like **start** and **stop**
+        
+        ```
+        start
+            input myNumber
+            set myAnswer = myNumber * 2
+            output myAnswer
+        stop
+        ```
+
+        ---
+        
+        # Writing pseudocode
+        
+        Pseudocode is fairly flexible because it is a planning tool, and not the final product.
+
+        - Instead of `start` and `stop`, some pseudocode developers would use other terms such as `begin` and `end`.
+        - Instead of writing `input myNumber`, some developers would write `get myNumber` or `read myNumber`.
+        - Instead of writing `set myAnswer = myNumber * 2`, some developers would write calculate `myAnswer = myNumber times 2` or `compute myAnswer as myNumber doubled`.
+        - Instead of writing `output myAnswer`, many pseudocode developers would write `display myAnswer`, `print myAnswer`, or `write myAnswer`.
+        
+        ---
+        
+        # Moving that logic over
+        
+        When you eventually convert your pseudocode to a specific programming language,
+        you do not have such flexibility because specific syntax will be required.
+
+        ```
+        class Program { 
+            static void Main(string[] args) 
+            {           
+                int x = Console.Read(); 
+                x *= 2;
+                Console.WriteLine(x); 
+            } 
+        } 
+        ```
+
+        ---
+        
+        # Drawing flowcharts
+        
+        Some programmers prefer drawing flowcharts to represent the logical
+        flow, because flowcharts allow programmers to visualize more easily how the program statements will connect.
+
+        You can draw a flowchart by hand or use software
+        
+        ---
+        
+        # Input symbol
+        
+        You use a parallelogram to represent an input symbol, which indicates an input operation.
+        You write an input statement in English inside the parallelogram.
+
+        ![Input symbol](https://i.imgur.com/DtfSUw4.png)
+        
+        ---
+        
+        # Processing symbol
+        
+        Arithmetic operation statements are examples of processing.
+        In a flowchart, you use a rectangle as the processing symbol that contains a processing statement.
+        
+        ![Processing symbol](https://i.imgur.com/0jUulbS.png)
+        
+        ---
+        
+        # Output symbol
+        
+        Because the parallelogram is used for both input and output, it is often called the **input/output symbol or I/O symbol**.
+        
+        ![Output symbol](https://i.imgur.com/bUvIqpP.png)
+
+        ---
+        
+        # Flowlines
+        
+        To show the correct sequence of these statements, you use arrows, or flowlines, to connect the steps.
+        
+        ![Flowlines](https://i.imgur.com/L8heQ97.png)
+
+        ---
+        
+        # Terminal symbols
+        
+        Start/ stop symbols, at each end.
+
+        ![Terminal symbols](https://i.imgur.com/V5lORWK.png)
+        
+        ---
+        
+        # Completed flowchart
+        
+        ![Completed flowchart](https://i.imgur.com/b5G7l1b.png)
+        
+        ---
+
+        # Repeating instructions
+
+        If a problem has x amount of repeating steps, we can loop it fairly simply.
+
+        ![Repeating instructions](https://i.stack.imgur.com/ZTRtY.png)
+
+        ---
+
+        # Uses outside of planning
+
+        ![Character animator](https://docs.unity3d.com/uploads/Main/classAnimatorController-Autofit.jpg)
+
+        ---
+        # Uses outside of planning
+
+        ![Blueprints](https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/120368875/original/e8bdbd8989302fb9bc4003daf54b87c045b74200/build-blueprints-in-unreal-engine.png)
+        ---
+
+        # Let's build a platformer controller flowchart
+
+        https://app.diagrams.net/
+
+        ---
+        
+        # Slides and notes
+        
+        ### Slides and notes can be found at:
+        
+        https://tinyurl.com/vega-notes
+        
+        ### Additional resources
+        https://app.diagrams.net/
+    
+        https://en.wikipedia.org/wiki/Flowchart
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        var slideshow = remark.create();
+        const body = document.querySelector('body');
+
+        body.addEventListener('dblclick', function (e) {
+            openFullscreen(body);
+        });
+
+        function openFullscreen(elem) {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+
+        function closeFullscreen(elem) {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>
