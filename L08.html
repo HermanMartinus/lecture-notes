@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lecture 08</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Droid Serif';
+            word-wrap: break-word;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: normal;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Ubuntu Mono';
+        }
+
+        img {
+            max-width: 100%;
+            min-width: 50%;
+            max-height: 60vh;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+        class: center, middle
+
+        # Lecture 08
+        ## The evolution of programming models
+        
+        ---
+        class: center, middle
+        ### Old programming languages were very complicated to understand
+        ### Newer programming languages are a lot more like natural language
+        ---
+        class: center, middle
+        
+        ### Using variables instead of memory addresses is lovely
+
+        ---
+
+        ### Older languages were written in one piece from start to finish
+
+        This meant no reusability
+
+        No extensibility
+
+        Writing several small modules instead of one large one is much better
+
+        ---
+
+        class: center, middle
+
+        ### Two major models/paradigms are used by programmers to write software
+
+        ---
+
+        ### Procedural programming
+        ### Object oriented programming
+
+        ---
+
+        # Procedural programming
+        
+        - Program is divided into small parts called functions
+        - Follows top down approach
+        - No access specifier (protection level)
+        - Does not have any proper way for hiding data so it is less secure
+
+        ```
+        Examples: C, FORTRAN, Pascal, Basic etc.
+        ```
+        
+        ---
+
+        # Object oriented programming
+
+        - Program is divided into small parts called objects
+        - Follows bottom up approach
+        - Has access specifiers like private, public, protected etc
+        - Provides data hiding so it is more secure
+        
+        ```
+        Examples: C++, Java, Python, C# etc.
+        ```
+        
+        ---
+        
+        # Slides and notes
+        
+        ### Slides and notes can be found at:
+        
+        https://tinyurl.com/vega-notes
+        
+        <!-- ### Additional resources -->
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        var slideshow = remark.create();
+        const body = document.querySelector('body');
+
+        body.addEventListener('dblclick', function (e) {
+            openFullscreen(body);
+        });
+
+        function openFullscreen(elem) {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+
+        function closeFullscreen(elem) {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>

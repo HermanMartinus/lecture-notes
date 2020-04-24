@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lecture 06</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Droid Serif';
+            word-wrap: break-word;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: normal;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Ubuntu Mono';
+        }
+
+        img {
+            max-width: 100%;
+            min-width: 50%;
+            max-height: 60vh;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+        class: center, middle
+
+        # Lecture 06
+        ## Loops and sentinel value
+        
+        ---
+        
+        # Flowchart symbols
+        
+        ![Flowchar symbols](images/3.png)
+        
+        ---
+        
+        # Repeating instructions
+
+        Say we want to repeat a task 10 times.
+        
+        What about 100 times?
+
+        ---
+
+        ```
+        start
+            input myNumber
+            set myAnswer = myNumber * 2
+            output myAnswer
+            input myNumber
+            set myAnswer = myNumber * 2
+            output myAnswer
+            input myNumber
+            set myAnswer = myNumber * 2
+            output myAnswer
+            ...and so on for 9,997 more times
+        ```
+        
+        ---
+
+        class: center, middle
+
+        ![Forever loop](images/4.png)
+
+        ---
+
+        # Using a Sentinel Value to End a Program
+
+        Using a variable of function to signal the end of a loop. 
+
+        ---
+
+        # Using a Sentinel Value to End a Program
+        ```
+        if myNumber == 0
+            break
+
+        for myNumber != 0
+
+        etc...
+        ```
+
+        ---
+
+        class: center, middle
+        ![Loop with sentinel](images/5.png)
+
+        ---
+        
+        # Slides and notes
+        
+        ### Slides and notes can be found at:
+        
+        https://tinyurl.com/vega-notes
+        
+        <!-- ### Additional resources -->
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        var slideshow = remark.create();
+        const body = document.querySelector('body');
+
+        body.addEventListener('dblclick', function (e) {
+            openFullscreen(body);
+        });
+
+        function openFullscreen(elem) {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+
+        function closeFullscreen(elem) {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>
